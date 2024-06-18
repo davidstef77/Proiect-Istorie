@@ -1,0 +1,267 @@
+body{
+  background-color:#04151F;
+  font-family: sans-serif;
+  color: white;
+  overflow-x: hidden;
+  
+}
+
+h1{
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 700%;
+  
+}
+
+h1:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.etnogeneza{
+  position: relative;
+  text-align: center;
+  color: white;
+  
+  
+  
+}
+
+h2{
+  text-align: center;
+  font-size: 250%;
+}
+ 
+
+
+.item{
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.unu{
+  
+  max-width: 1100px;
+  
+}
+
+.gfg{
+  
+  width: 80%;
+  
+}
+
+.pintroducere{
+  
+  top: 30%;
+  text-align: center;
+  
+  font-size: 170%;
+    
+}
+
+
+
+.idacia{
+  max-width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
+  
+}
+
+.container{
+  text-align: center;
+  background-color: #401010;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 120%;
+  
+}
+
+.steaguldaciei{
+  height: 70%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qwer{
+  margin-top:12%;
+  margin-right: 7%;
+  margin-left: 52%;
+  font-size: 150%;
+
+}
+
+.icolumna{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 3%;
+}
+
+.romanizarea{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  background-color: #401010;
+  
+}
+
+.promanizarea{
+  font-size: 130%;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 95%;
+  margin-left: 2%;
+  
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-left: 2%;
+  border-top: none;
+  background-color: #401010;
+  width: 94%;
+  font-size: 20px;
+  
+}
+
+a {
+  text-decoration: none;
+  color:#ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+  .button-32 {
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-left: 40%;
+    background-color: #401010;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 20%;
+    
+    box-sizing: border-box;
+    border: 0;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-32:not(:disabled):hover,
+  .button-32:not(:disabled):focus {
+    outline: 0;
+    background: gray;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+  }
+  
+  .button-32:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  
+}
+
+ul{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #401010;
+  font-size: 30px;
+  margin-left: 17%;
+  margin-right: 17%;
+}
+
+li{
+  margin-right: 20px;
+}
+
+*{
+  text-decoration: none;
+  list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 35px;
+    top: 31%;
+
+  }
+
+  ul{
+    font-size: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .tab button{
+    font-size: 15px;
+    width: 23%;
+    
+  }
+
+  .tabcontent{
+    margin-right: 15%;
+    width: 89%;
+  }
+
+  .idacia, .icolumna , .steaguldaciei{
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .gfg{
+    width: 100%;
+  }
+
+  
+
+}

@@ -1,0 +1,40 @@
+body{
+  background-color:#04151F;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1{
+  
+  text-align: center;
+  
+  font-size: 350%;
+  
+}
+p{
+  text-align: center;
+  
+  font-size: 70%;
+
+}
+
+#questions {
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 10px;
+  font-size: 21px;
+  text-align: center;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 40px;
+}
