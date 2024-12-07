@@ -106,16 +106,16 @@ section p {
   h1 {
     margin-top: 15% !important;
     font-size: 35px;
-    top: -35%;
+    top: -69%;
   }
 
   .prim, .primde {
     font-size: 120%;
-    margin-left: 0;
+    margin-left: -2%;
     margin-right: 0;
     margin-top: 25px;
     background-color: #04151F;
-    width: 100%;
+    width: 90%;
   }
 
   .geto-dacii {

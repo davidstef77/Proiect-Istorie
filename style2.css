@@ -98,23 +98,27 @@ section p {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    margin-top: 15% !important;
+    margin-top: -100px !important;
     font-size: 35px;
     top: -35%;
   }
 
   .prim, .primde {
-    font-size: 120%;
-    margin-left: 0;
+    font-size: 80%;
+    margin-left: 30px !important; 
     margin-right: 0;
     margin-top: 25px;
     background-color: #04151F;
-    width: 100%;
+    width: 80%;
   }
 
   .geto-dacii {
     text-align: center;
     color: white;
+  }
+
+  section{
+    margin-top: 45%;
   }
 
   section h2 {

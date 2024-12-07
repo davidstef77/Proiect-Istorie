@@ -169,28 +169,59 @@ h1:hover {
   background-color: #4d56e0;
 }
 
+/* Responsive Design */
+
 /* For devices with a max width of 768px */
 @media (max-width: 768px) {
   .nav-list {
     flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+
+  h1 {
+    font-size: 400%;
+    margin-top:70px ;
   }
 
   img {
-    max-width: 100%;
-    height: auto; /* Ensures the image retains its aspect ratio */
+    max-width: 100%; /* Ensures all images take up the full width of the container */
+    height: auto; /* Retains aspect ratio */
   }
 
   .header {
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   .gfg {
     width: 80%;
-    margin-top: 50%;
+    margin-top: 20%;
+  }
+
+  .section {
+    padding: 30px;
   }
 
   .container {
     padding: 0 10px;
+  }
+
+  .tab button {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+  .tabcontent h3 {
+    font-size: 24px;
+  }
+
+  .tabcontent p {
+    font-size: 16px;
   }
 }
 
@@ -200,8 +231,39 @@ h1:hover {
     font-size: 300%;
   }
 
-  img {
-    max-width: 100%; /* Ensures all images take up the full width of the container */
-    height: auto; /* Retains aspect ratio */
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-list li {
+    margin: 5px 0;
+  }
+
+  .gfg {
+    width: 90%;
+    margin-top: 30%;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .button-32 {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .tab button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .tabcontent h3 {
+    font-size: 22px;
+  }
+
+  .tabcontent p {
+    font-size: 14px;
   }
 }
