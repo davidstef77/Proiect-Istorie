@@ -1,0 +1,88 @@
+body {
+  background-color: #04151F;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-right: 10%;
+  font-size: 600%;
+}
+
+p {
+  text-align: center;
+  font-size: 170%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around; /* Align test sections horizontally */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin-top: 4%;
+}
+
+.testu, .testd, .testt {
+  position: relative;
+  width: 30%; /* Make test containers take up 30% of the container */
+  margin-top: 2%;
+  text-align: center;
+}
+
+.testu img, .testd img, .testt img {
+  width: 100%;
+  height: auto;
+}
+
+.testu .btn, .testd .btn, .testt .btn {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(145deg, #6e7dff, #4d56e0); /* Modern gradient */
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px; /* Rounded corners */
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.testu .btn:hover, .testd .btn:hover, .testt .btn:hover {
+  background: linear-gradient(145deg, #4d56e0, #6e7dff); /* Hover effect */
+  transform: translate(-50%, -50%) scale(1.05); /* Slight scale-up on hover */
+}
+
+h2 {
+  font-size: 30px;
+  color: white;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .btn {
+    width: 80%;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testu, .testd, .testt {
+    width: 90%; /* Make test containers take up more width on small screens */
+    margin: 10px auto; /* Center the test sections */
+  }
+}

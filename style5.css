@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  background-color: #04151F;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1C2731;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #FF6F61;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#questions {
+  margin-bottom: 30px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 2px solid #34495E;
+  background-color: #2C3E50;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #FF6F61;
+  background-color: #34495E;
+}
+
+#submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #E55D50;
+}
+
+#result {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: none;
+}
+
+#result.visible {
+  display: block;
+}
+
+/* Animation for result and button */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.visible {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation for all correct answers */
+@keyframes celebrate {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+#result.correct {
+  animation: celebrate 1s ease-out;
+  color: #FFD700; 
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgba(255, 223, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(255, 223, 0, 0.7);
+}

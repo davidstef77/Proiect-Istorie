@@ -1,0 +1,143 @@
+body{
+  background-color:#04151F;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1{
+  position: absolute;
+  margin-top: -38%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  font-size: 700%;
+  color: black;
+  
+}
+
+h1:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.gfg{
+  width: 100%
+  
+}
+
+.geto-dacii{
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+
+.prim{
+  position: absolute;
+  margin-top: -30%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 55%;
+  font-size: 135%;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+.primde{
+  position: absolute;
+  margin-top: -30%;
+  text-align: center;
+  margin-left: 55%;
+  margin-right: 5%;
+  font-size: 135%;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+.paragrafdoi {
+  text-align: center;
+  font-size: 135%;
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #4d56e0;
+  font-size: 250%;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+section p {
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Content Section Layout */
+.content {
+  padding: 40px 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-top: 15% !important;
+    font-size: 35px;
+    top: -35%;
+  }
+
+  .prim, .primde {
+    font-size: 120%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 25px;
+    background-color: #04151F;
+    width: 100%;
+  }
+
+  .geto-dacii {
+    text-align: center;
+    color: white;
+  }
+
+  section h2 {
+    font-size: 200%;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+}
+
+/* Add arrows before text */
+.prim::before, .primde::before {
+  content: '➤'; /* Unicode arrow character */
+  font-size: 1.5rem; /* Adjust size to fit */
+  color: #555; /* Customize color */
+  margin-right: 10px; /* Space between arrow and text */
+  vertical-align: middle; /* Align with text */
+}
+
+/* Hover Effects for Sections */
+section:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
